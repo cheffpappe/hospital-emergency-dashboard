@@ -1,0 +1,732 @@
+{
+  "pages": [
+    {
+      "name": "Monthly View",
+      "visuals": [
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "textbox",
+          "title": null,
+          "projections": [],
+          "texts": []
+        },
+        {
+          "type": "textbox",
+          "title": null,
+          "projections": [],
+          "texts": []
+        },
+        {
+          "type": "cardVisual",
+          "title": null,
+          "projections": [
+            "Data:Hospital ER_Data.No of Patients"
+          ]
+        },
+        {
+          "type": "slicer",
+          "title": "Year",
+          "projections": [
+            "Values:Date Table.Year"
+          ],
+          "texts": [
+            "Dropdown",
+            "Year"
+          ]
+        },
+        {
+          "type": "slicer",
+          "title": "Month",
+          "projections": [
+            "Values:Date Table.Month Name"
+          ],
+          "texts": [
+            "Dropdown",
+            "April",
+            "Month"
+          ]
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "areaChart",
+          "title": null,
+          "projections": [
+            "Category:Date Table.Date.Variation.Date Hierarchy.Day",
+            "Y:Hospital ER_Data.No of Patients"
+          ]
+        },
+        {
+          "type": "textbox",
+          "title": null,
+          "projections": [],
+          "texts": []
+        },
+        {
+          "type": "textbox",
+          "title": null,
+          "projections": [],
+          "texts": []
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "areaChart",
+          "title": null,
+          "projections": [
+            "Category:Date Table.Date.Variation.Date Hierarchy.Day",
+            "Y:Sum(Hospital ER_Data.Patient Waittime)"
+          ]
+        },
+        {
+          "type": "textbox",
+          "title": null,
+          "projections": [],
+          "texts": []
+        },
+        {
+          "type": "cardVisual",
+          "title": null,
+          "projections": [
+            "Data:Hospital ER_Data.Satisfaction Score"
+          ]
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "areaChart",
+          "title": null,
+          "projections": [
+            "Category:Date Table.Date.Variation.Date Hierarchy.Day",
+            "Y:Hospital ER_Data.Satisfaction Score"
+          ]
+        },
+        {
+          "type": "textbox",
+          "title": null,
+          "projections": [],
+          "texts": []
+        },
+        {
+          "type": "cardVisual",
+          "title": null,
+          "projections": [
+            "Data:Hospital ER_Data.No of patients reffered"
+          ]
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "areaChart",
+          "title": null,
+          "projections": [
+            "Category:Date Table.Date.Variation.Date Hierarchy.Day",
+            "Y:Hospital ER_Data.No of patients reffered"
+          ]
+        },
+        {
+          "type": "cardVisual",
+          "title": null,
+          "projections": [
+            "Data:Hospital ER_Data.Avg_Wait_Time"
+          ]
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "pivotTable",
+          "title": "Patient Admission Status",
+          "projections": [
+            "Rows:Hospital ER_Data.admission status",
+            "Values:Hospital ER_Data.No of Patients1",
+            "Values:Hospital ER_Data.No of Patients"
+          ]
+        },
+        {
+          "type": "barChart",
+          "title": null,
+          "projections": [
+            "Category:Hospital ER_Data.admission status",
+            "Y:Hospital ER_Data.No of Patients"
+          ]
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "clusteredColumnChart",
+          "title": null,
+          "projections": [
+            "Category:Hospital ER_Data.Age Group",
+            "Y:Hospital ER_Data.No of Patients"
+          ]
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "clusteredBarChart",
+          "title": null,
+          "projections": [
+            "Category:Hospital ER_Data.Department Referral",
+            "Y:Hospital ER_Data.No of Patients"
+          ]
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "donutChart",
+          "title": "No of Patients Seen Within 30min",
+          "projections": [
+            "Category:Hospital ER_Data.Waittime Status",
+            "Y:Hospital ER_Data.No of Patients"
+          ]
+        },
+        {
+          "type": "donutChart",
+          "title": "No of Patients By Gender",
+          "projections": [
+            "Y:Hospital ER_Data.No of Patients",
+            "Category:Hospital ER_Data.Patient Gender"
+          ]
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "clusteredBarChart",
+          "title": "No of Patients by Race",
+          "projections": [
+            "Category:Hospital ER_Data.Patient Race",
+            "Y:Hospital ER_Data.No of Patients"
+          ]
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "pivotTable",
+          "title": null,
+          "projections": [
+            "Columns:Date Table.Day Name",
+            "Rows:Hospital ER_Data.Waittime Interval",
+            "Values:Hospital ER_Data.No of Patients"
+          ]
+        },
+        {
+          "type": "clusteredColumnChart",
+          "title": "No of Patients by Day and Hour",
+          "projections": [
+            "Category:Date Table.Day Name",
+            "Y:Hospital ER_Data.No of Patients"
+          ]
+        },
+        {
+          "type": "image",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "image",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "image",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "image",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "image",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "pageNavigator",
+          "title": null,
+          "projections": []
+        }
+      ]
+    },
+    {
+      "name": "Consolidated View",
+      "visuals": [
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "textbox",
+          "title": null,
+          "projections": [],
+          "texts": []
+        },
+        {
+          "type": "textbox",
+          "title": null,
+          "projections": [],
+          "texts": []
+        },
+        {
+          "type": "cardVisual",
+          "title": null,
+          "projections": [
+            "Data:Hospital ER_Data.No of Patients"
+          ]
+        },
+        {
+          "type": "slicer",
+          "title": "Date",
+          "projections": [
+            "Values:Date Table.Date"
+          ],
+          "texts": [
+            "Between",
+            "Date"
+          ]
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "areaChart",
+          "title": null,
+          "projections": [
+            "Category:Date Table.Date.Variation.Date Hierarchy.Day",
+            "Y:Hospital ER_Data.No of Patients"
+          ]
+        },
+        {
+          "type": "textbox",
+          "title": null,
+          "projections": [],
+          "texts": []
+        },
+        {
+          "type": "textbox",
+          "title": null,
+          "projections": [],
+          "texts": []
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "areaChart",
+          "title": null,
+          "projections": [
+            "Category:Date Table.Date.Variation.Date Hierarchy.Day",
+            "Y:Sum(Hospital ER_Data.Patient Waittime)"
+          ]
+        },
+        {
+          "type": "textbox",
+          "title": null,
+          "projections": [],
+          "texts": []
+        },
+        {
+          "type": "cardVisual",
+          "title": null,
+          "projections": [
+            "Data:Hospital ER_Data.Satisfaction Score"
+          ]
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "areaChart",
+          "title": null,
+          "projections": [
+            "Category:Date Table.Date.Variation.Date Hierarchy.Day",
+            "Y:Hospital ER_Data.Satisfaction Score"
+          ]
+        },
+        {
+          "type": "textbox",
+          "title": null,
+          "projections": [],
+          "texts": []
+        },
+        {
+          "type": "cardVisual",
+          "title": null,
+          "projections": [
+            "Data:Hospital ER_Data.No of patients reffered"
+          ]
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "areaChart",
+          "title": null,
+          "projections": [
+            "Category:Date Table.Date.Variation.Date Hierarchy.Day",
+            "Y:Hospital ER_Data.No of patients reffered"
+          ]
+        },
+        {
+          "type": "cardVisual",
+          "title": null,
+          "projections": [
+            "Data:Hospital ER_Data.Avg_Wait_Time"
+          ]
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "pivotTable",
+          "title": "Patient Admission Status",
+          "projections": [
+            "Rows:Hospital ER_Data.admission status",
+            "Values:Hospital ER_Data.No of Patients1",
+            "Values:Hospital ER_Data.No of Patients"
+          ]
+        },
+        {
+          "type": "barChart",
+          "title": null,
+          "projections": [
+            "Category:Hospital ER_Data.admission status",
+            "Y:Hospital ER_Data.No of Patients"
+          ]
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "clusteredColumnChart",
+          "title": null,
+          "projections": [
+            "Category:Hospital ER_Data.Age Group",
+            "Y:Hospital ER_Data.No of Patients"
+          ]
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "clusteredBarChart",
+          "title": null,
+          "projections": [
+            "Category:Hospital ER_Data.Department Referral",
+            "Y:Hospital ER_Data.No of Patients"
+          ]
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "donutChart",
+          "title": "No of Patients Seen Within 30min",
+          "projections": [
+            "Category:Hospital ER_Data.Waittime Status",
+            "Y:Hospital ER_Data.No of Patients"
+          ]
+        },
+        {
+          "type": "donutChart",
+          "title": "No of Patients By Gender",
+          "projections": [
+            "Y:Hospital ER_Data.No of Patients",
+            "Category:Hospital ER_Data.Patient Gender"
+          ]
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "clusteredBarChart",
+          "title": "No of Patients by Race",
+          "projections": [
+            "Category:Hospital ER_Data.Patient Race",
+            "Y:Hospital ER_Data.No of Patients"
+          ]
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "pivotTable",
+          "title": null,
+          "projections": [
+            "Columns:Date Table.Day Name",
+            "Rows:Hospital ER_Data.Waittime Interval",
+            "Values:Hospital ER_Data.No of Patients"
+          ]
+        },
+        {
+          "type": "clusteredColumnChart",
+          "title": "No of Patients by Day and Hour",
+          "projections": [
+            "Category:Date Table.Day Name",
+            "Y:Hospital ER_Data.No of Patients"
+          ]
+        },
+        {
+          "type": "image",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "image",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "image",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "image",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "image",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "pageNavigator",
+          "title": null,
+          "projections": []
+        }
+      ]
+    },
+    {
+      "name": "Patient Details",
+      "visuals": [
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "textbox",
+          "title": null,
+          "projections": [],
+          "texts": []
+        },
+        {
+          "type": "slicer",
+          "title": "Date",
+          "projections": [
+            "Values:Date Table.Date"
+          ],
+          "texts": [
+            "Between",
+            "Date"
+          ]
+        },
+        {
+          "type": "textbox",
+          "title": null,
+          "projections": [],
+          "texts": []
+        },
+        {
+          "type": "image",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "tableEx",
+          "title": null,
+          "projections": [
+            "Values:Hospital ER_Data.Patient Id",
+            "Values:Hospital ER_Data.Patient Full Name",
+            "Values:Hospital ER_Data.Patient Gender",
+            "Values:Sum(Hospital ER_Data.Patient Age)",
+            "Values:Hospital ER_Data.Patient Admin Date",
+            "Values:Hospital ER_Data.Patient Race",
+            "Values:Sum(Hospital ER_Data.Patient Waittime)",
+            "Values:Hospital ER_Data.Department Referral",
+            "Values:Hospital ER_Data.admission status"
+          ]
+        },
+        {
+          "type": "pageNavigator",
+          "title": null,
+          "projections": []
+        }
+      ]
+    },
+    {
+      "name": "Descriptive analysis",
+      "visuals": [
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "shape",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "textbox",
+          "title": null,
+          "projections": [],
+          "texts": []
+        },
+        {
+          "type": "textbox",
+          "title": null,
+          "projections": [],
+          "texts": []
+        },
+        {
+          "type": "image",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "pageNavigator",
+          "title": null,
+          "projections": []
+        },
+        {
+          "type": "textbox",
+          "title": null,
+          "projections": [],
+          "texts": []
+        },
+        {
+          "type": "textbox",
+          "title": null,
+          "projections": [],
+          "texts": []
+        }
+      ]
+    }
+  ],
+  "tables": [
+    "Date Table",
+    "Hospital ER_Data"
+  ],
+  "fields": [
+    "Age Group",
+    "Avg_Wait_Time",
+    "Date",
+    "Day Name",
+    "Department Referral",
+    "Month Name",
+    "No of Patients",
+    "No of patients reffered",
+    "Patient Admin Date",
+    "Patient Age",
+    "Patient Full Name",
+    "Patient Gender",
+    "Patient Id",
+    "Patient Race",
+    "Patient Waittime",
+    "Satisfaction Score",
+    "Waittime Interval",
+    "Waittime Status",
+    "Year",
+    "admission status"
+  ],
+  "visualTypeCounts": {
+    "shape": 30,
+    "textbox": 18,
+    "cardVisual": 8,
+    "slicer": 4,
+    "areaChart": 8,
+    "pivotTable": 4,
+    "barChart": 2,
+    "clusteredColumnChart": 4,
+    "clusteredBarChart": 4,
+    "donutChart": 4,
+    "image": 12,
+    "pageNavigator": 4,
+    "tableEx": 1
+  },
+  "literals": []
+}
